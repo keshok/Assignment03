@@ -23,10 +23,10 @@ namespace Assignment_3
             name = Console.ReadLine();
             Console.Write("Enter your last name: ");
             name2 = Console.ReadLine();
-            Console.WriteLine("*******************************************************************************");
-            Console.WriteLine("What would you like to eat on the menu?");
             while(restaurantMenu != 5)
             {
+                Console.WriteLine("*******************************************************************************");
+                Console.WriteLine("What would you like to eat on the menu?");
                 Console.WriteLine("*******************************************************************************");
                 Console.WriteLine("1) Pizza");
                 Console.WriteLine("2) Burger");
@@ -43,21 +43,37 @@ namespace Assignment_3
                         Console.WriteLine("*******************************************************************************");
                         Console.WriteLine("Do you want to order pizza?");
                         Console.WriteLine("What else would you like to order on the menu {0}?", name);
+                        Console.WriteLine("*******************************************************************************");
+                        Console.WriteLine("Press any key to select the next choice on the menu...");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 2:
                         Console.WriteLine("*******************************************************************************");
                         Console.WriteLine("Do you want to order burger(s)?");
                         Console.WriteLine("What else would you like to order on the menu {0}?", name);
+                        Console.WriteLine("*******************************************************************************");
+                        Console.WriteLine("Press any key to select the next choice on the menu...");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 3:
                         Console.WriteLine("*******************************************************************************");
                         Console.WriteLine("Do you want to order hot dog(s)?");
                         Console.WriteLine("What else would you like to order on the menu {0}?", name);
+                        Console.WriteLine("*******************************************************************************");
+                        Console.WriteLine("Press any key to select the next choice on the menu...");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 4:
                         Console.WriteLine("*******************************************************************************");
                         Console.WriteLine("Do you want to order ice cream?");
                         Console.WriteLine("What else would you like to order on the menu {0}?", name);
+                        Console.WriteLine("*******************************************************************************");
+                        Console.WriteLine("Press any key to select the next choice on the menu...");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 5:
                         Console.WriteLine("*******************************************************************************");
@@ -67,6 +83,10 @@ namespace Assignment_3
                     default:
                         Console.WriteLine("*******************************************************************************");
                         Console.WriteLine("ERROR - Invalid choice or selction, please try again {0}!", name);
+                        Console.WriteLine("*******************************************************************************");
+                        Console.WriteLine("Press any key to select the next choice on the menu...");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                 }
             }
